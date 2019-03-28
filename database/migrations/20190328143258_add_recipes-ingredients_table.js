@@ -18,7 +18,7 @@ exports.up = function (knex, Promise) {
             .onDelete('CASCADE')
             .onUpdate('CASCADE');
 
-        tbl.float('quantity')
+        tbl.float('quantity') // i've just put in strings - can't for calcs
             .unsigned();
     });
 };
